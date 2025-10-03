@@ -7,7 +7,7 @@ packaging==25.0
 pluggy==1.6.0
 pycparser==2.23
 Pygments==2.19.2
-PySimpleGUI==5.0.10
+PySimpleGUI-4-foss==4.60.4.1
 pytest==8.4.2
 zxcvbn-python==4.4.24
 pyperclip==1.11.0
