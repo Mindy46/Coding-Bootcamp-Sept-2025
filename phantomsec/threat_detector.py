@@ -260,11 +260,12 @@ class ThreatDetector:
                 
                 port_scans.append({
                     'ip': ip,
-                    'ports_scanned': len(activity['ports']),
+                    'port_count': len(activity['ports']),  # Changed from 'ports_scanned'
                     'blocked_attempts': activity['blocked_count'],
-                    'time_span_seconds': time_span,
+                    'time_span': f"{time_span:.0f} seconds ({time_span/60:.1f} minutes)",  # Changed from 'time_span_seconds'
+                    'scan_type': 'Sequential scan',  # Added field
                     'severity': 'high',
-                    'ports': sorted(list(activity['ports']))[:20]  # First 20 ports
+                    'ports': sorted(list(activity['ports']))[:20]
                 })
         
         return port_scans
