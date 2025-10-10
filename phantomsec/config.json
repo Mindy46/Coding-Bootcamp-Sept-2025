@@ -1,0 +1,41 @@
+{
+  "_README": "Configuration file. We can adjust values as needed.",
+  
+  "brute_force_threshold": 5,
+  "brute_force_window_minutes": 10,
+  
+  "port_scan_threshold": 10,
+  
+  "injection_sensitivity": "medium",
+  
+  "alert_methods": [
+    "console",
+    "file"
+  ],
+  
+  "alert_log_file": "alerts.log",
+  
+  "email_alerts": false,
+  "email_recipient": null,
+  "email_smtp_server": null,
+  "email_smtp_port": 587,
+  
+  "use_ip_geolocation": false,
+  "geolocation_api_key": null,
+  
+  "use_threat_intel": false,
+  "threat_intel_api_key": null,
+  
+  "ip_whitelist": [
+    "192.168.1.1",
+    "10.0.0.1"
+  ],
+  
+  "ip_blacklist": [],
+  
+  "report_format": "text",
+  "include_raw_logs": false,
+  
+  "max_log_entries": 100000,
+  "enable_caching": false
+}
