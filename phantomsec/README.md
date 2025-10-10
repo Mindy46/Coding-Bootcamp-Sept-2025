@@ -8,23 +8,29 @@ This tool was built as a capstone project to demonstrate practical cybersecurity
 
 ## ✨ Features
 
-- **Multiple Log Format Support**: Apache, Nginx, Firewall, Authentication logs
-- **Threat Detection**:
-  - Brute force attack detection
-  - Port scanning identification
-  - SQL injection & XSS attempt detection
-  - Suspicious IP behavior analysis
-  - Path traversal attempts
-- **Configurable Detection Rules**: Customize thresholds and sensitivity
-- **Comprehensive Reporting**: Generates detailed text reports with findings
-- **Alert System**: Console and file-based alerts for critical threats
-- **IP Intelligence**: Reverse DNS, geolocation support (extensible)
+**Multiple Log Format Support:** Apache, Nginx, Firewall, Authentication logs
+
+**Threat Detection:**
+- Brute force attack detection
+- Port scanning identification
+- SQL injection & XSS attempt detection
+- Suspicious IP behavior analysis
+- Path traversal attempts
+
+**Configurable Detection Rules:** Customize thresholds and sensitivity
+
+**Comprehensive Reporting:** Generates detailed text reports with findings
+
+**Alert System:** Console and file-based alerts for critical threats
+
+**IP Intelligence:** Reverse DNS, geolocation support (extensible)
 
 ## 📋 Requirements
 
 Python 3.7+ (no external dependencies - uses standard library only)
 
 ### Python Standard Library Modules Used
+
 - `re` - Regular expression operations
 - `datetime` - Date and time handling
 - `collections` - Specialized container datatypes
@@ -39,26 +45,37 @@ Python 3.7+ (no external dependencies - uses standard library only)
 
 ## 📁 File Structure
 
+```
 ThreatDetectionSystem/
-├── main.py                     # Main entry point
-├── log_parser.py               # Log parsing for different formats
-├── threat_detector.py          # Core threat detection algorithms
-├── report_generator.py         # Report generation
-├── alert_system.py             # Alert handling
-├── config_loader.py            # Configuration management
-├── ip_utils.py                 # IP address utilities
-├── utils.py                    # General helper functions
-├── config.json                 # Configuration file
-└── README.md                   # This file
+├── main.py                 # Main entry point
+├── log_parser.py           # Log parsing for different formats
+├── threat_detector.py      # Core threat detection algorithms
+├── report_generator.py     # Report generation
+├── alert_system.py         # Alert handling
+├── config_loader.py        # Configuration management
+├── ip_utils.py             # IP address utilities
+├── utils.py                # General helper functions
+├── config.json             # Configuration file
+└── README.md               # This file
+```
 
 ## 🚀 Getting Started
 
-### Step 1: Verify Python Installation: Check that Python 3.7+ is installed
-### Step 2: Verify Project Files: You should see all 10 files listed in the File Structure section above.
-### Step 3: Quick Start Test: Create a test log file and run the analyzer.
+### Step 1: Verify Python Installation
 
-# Create a test log with multiple threat patterns such as:
+Check that Python 3.7+ is installed
 
+### Step 2: Verify Project Files
+
+You should see all 10 files listed in the File Structure section above.
+
+### Step 3: Quick Start Test
+
+Create a test log file and run the analyzer.
+
+**Create a test log with multiple threat patterns:**
+
+```bash
 cat > test.log << 'EOF'
 192.168.1.100 - - [07/Oct/2025:10:00:00 +0000] "POST /login HTTP/1.1" 401 512
 192.168.1.100 - - [07/Oct/2025:10:00:01 +0000] "POST /login HTTP/1.1" 401 512
@@ -70,32 +87,43 @@ cat > test.log << 'EOF'
 45.142.212.61 - - [07/Oct/2025:10:01:01 +0000] "GET /wp-admin HTTP/1.1" 404 256
 103.216.221.19 - - [07/Oct/2025:10:02:00 +0000] "GET /search?q=<script>alert(1)</script> HTTP/1.1" 400 128
 EOF
+```
 
-# Run the analyzer
+**Run the analyzer:**
+
+```bash
 python main.py --log test.log --format apache
+```
 
-Command Line Options
+### Command Line Options
 
---log: Path to log file (required)
---format: Log format type (apache, nginx, firewall, auth)
---config: Path to config file (default: config.json)
---output: Output report filename (default: report.txt)
---verbose or -v: Enable verbose output
+- `--log`: Path to log file (required)
+- `--format`: Log format type (apache, nginx, firewall, auth)
+- `--config`: Path to config file (default: config.json)
+- `--output`: Output report filename (default: report.txt)
+- `--verbose` or `-v`: Enable verbose output
 
 ### Step 4: Review the Report
 
-# View the generated report
+**View the generated report:**
+
+```bash
 cat report.txt
+```
 
-# Or on Windows
+**Or on Windows:**
+
+```bash
 type report.txt
+```
 
-⚙️ Configuration
+## ⚙️ Configuration
 
-The system uses config.json for customizable settings.
+The system uses `config.json` for customizable settings.
 
-Edit config.json to customize detection thresholds:
+**Edit config.json to customize detection thresholds:**
 
+```json
 {
   "brute_force_threshold": 5,
   "brute_force_window_minutes": 10,
@@ -104,41 +132,45 @@ Edit config.json to customize detection thresholds:
   "ip_whitelist": [],
   "ip_blacklist": []
 }
+```
 
-Key Configuration Options
+### Key Configuration Options
 
-- brute_force_threshold: Number of failed login attempts to trigger alert
-- brute_force_window_minutes: Time window for counting attempts
-- port_scan_threshold: Number of unique ports before flagging as scan
-- alert_methods: How to send alerts (console, file)
-- ip_whitelist: IPs to never flag as suspicious
-- ip_blacklist: IPs to always flag
+- **brute_force_threshold:** Number of failed login attempts to trigger alert
+- **brute_force_window_minutes:** Time window for counting attempts
+- **port_scan_threshold:** Number of unique ports before flagging as scan
+- **alert_methods:** How to send alerts (console, file)
+- **ip_whitelist:** IPs to never flag as suspicious
+- **ip_blacklist:** IPs to always flag
 
-📊 Understanding the Output
+## 📊 Understanding the Output
 
-Report Sections
+### Report Sections
 
-- Executive Summary: High-level overview of threats
-- Critical Threats: IPs exhibiting multiple threat types
-- Brute Force Attacks: Failed login clustering
-- Suspicious IP Behavior: Anomalous access patterns
-- Port Scan Activity: Port scanning attempts
-- Injection Attempts: SQL injection, XSS, path traversal
-- Recommendations: Actionable security advice
+- **Executive Summary:** High-level overview of threats
+- **Critical Threats:** IPs exhibiting multiple threat types
+- **Brute Force Attacks:** Failed login clustering
+- **Suspicious IP Behavior:** Anomalous access patterns
+- **Port Scan Activity:** Port scanning attempts
+- **Injection Attempts:** SQL injection, XSS, path traversal
+- **Recommendations:** Actionable security advice
 
-Severity Levels
+### Severity Levels
 
-- CRITICAL: Multiple threat types from same IP
-- HIGH: Confirmed malicious activity
-- MEDIUM: Suspicious but not confirmed
-- LOW: Minor anomalies
+- **CRITICAL:** Multiple threat types from same IP
+- **HIGH:** Confirmed malicious activity
+- **MEDIUM:** Suspicious but not confirmed
+- **LOW:** Minor anomalies
 
-🔧 Extending the Tool
-- Adding Custom Detection Rules: Edit threat_detector.py and add your own detection methods
-- Adding New Log Formats: Edit log_parser.py and add a new parsing method
-- Integrating External APIs: Edit ip_utils.py to add API integrations
+## 🔧 Extending the Tool
 
-🎓 Learning Objectives
+**Adding Custom Detection Rules:** Edit `threat_detector.py` and add your own detection methods
+
+**Adding New Log Formats:** Edit `log_parser.py` and add a new parsing method
+
+**Integrating External APIs:** Edit `ip_utils.py` to add API integrations
+
+## 🎓 Learning Objectives
 
 This project demonstrates:
 
@@ -152,7 +184,7 @@ This project demonstrates:
 - Command-line argument parsing
 - Error handling
 
-⚠️ Limitations
+## ⚠️ Limitations
 
 - Does not provide real-time monitoring (batch analysis only)
 - Email alerts not fully implemented
@@ -160,29 +192,31 @@ This project demonstrates:
 - No GUI interface
 - Limited to text-based reports
 
-🔜 Future Enhancements
+## 🔜 Future Enhancements
 
- - Real-time log monitoring mode
- - HTML/PDF report generation
- - Machine learning for anomaly detection
- - Web dashboard interface
- - Database storage for historical analysis
- - Complete threat intelligence API integration
- - Email notification system
- - Log visualization graphs
+- Real-time log monitoring mode
+- HTML/PDF report generation
+- Machine learning for anomaly detection
+- Web dashboard interface
+- Database storage for historical analysis
+- Complete threat intelligence API integration
+- Email notification system
+- Log visualization graphs
 
-📝 Notes
+## 📝 Notes
 
-This is an educational project, not production security software
-Please test on sample data before running on production logs
-Some features are intentionally simplified for learning purposes
+- This is an educational project, not production security software
+- Please test on sample data before running on production logs
+- Some features are intentionally simplified for learning purposes
 
-📄 License
+## 📄 License
+
 Educational use. Free to use and modify for learning purposes.
 
-📧 Contact
+## 📧 Contact
+
 For questions about this project, please contact:
 
-Author: Thibault Gardet
-Email: gardet.thibault@gmail.com
-GitHub: https://github.com/Thibault13320
+- **Author:** Thibault Gardet
+- **Email:** gardet.thibault@gmail.com
+- **GitHub:** https://github.com/Thibault13320
