@@ -1,0 +1,12 @@
+Oct  7 04:30:15 my-server sshd[1539]: Received disconnect from 101.51.213.15 port 51356:11: Bye Bye
+Oct  7 04:30:22 my-server sshd[1541]: Accepted publickey for user john from 223.137.89.12 port 59812 ssh2: RSA SHA256:xxxxxxxxxx
+Oct  7 04:31:10 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:31:15 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:31:22 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:31:28 my-server sshd[1592]: Failed password for root from 114.36.179.10 port 48172 ssh2
+Oct  7 04:31:30 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:31:45 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:31:59 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:32:05 my-server sshd[1599]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=some-host.com user=root
+Oct  7 04:32:10 my-server sshd[1589]: Failed password for invalid user admin from 183.89.65.173 port 38910 ssh2
+Oct  7 04:33:01 my-server sshd[1605]: Accepted password for user jane from 192.168.1.100 port 60123 ssh2

@@ -1,0 +1,53 @@
+Oct  8 13:58:01 my-server sshd[2115]: Received disconnect from 101.51.213.15 port 51356:11: Bye Bye
+Oct  8 13:58:15 my-server sshd[2118]: Accepted publickey for user admin from 223.137.89.12 port 59812 ssh2: RSA SHA256:abc...
+Oct  8 13:58:20 my-server sshd[2120]: Failed password for invalid user oracle from 210.61.122.18 port 48910 ssh2
+Oct  8 13:58:25 my-server sshd[2121]: Failed password for invalid user test from 111.241.15.39 port 18210 ssh2
+Oct  8 13:58:33 my-server sshd[2122]: Failed password for root from 1.169.24.88 port 35432 ssh2
+Oct  8 13:58:39 my-server sshd[2123]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Oct  8 13:58:45 my-server sshd[2125]: Failed password for invalid user git from 61.228.35.157 port 22874 ssh2
+Oct  8 13:58:51 my-server sshd[2126]: Failed password for invalid user postgres from 104.248.153.215 port 41098 ssh2
+Oct  8 13:58:59 my-server sshd[2128]: Failed password for root from 27.242.198.15 port 50210 ssh2
+Oct  8 13:59:02 my-server sshd[2130]: Failed password for root from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:07 my-server sshd[2130]: Failed password for root from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:11 my-server sshd[2131]: Failed password for invalid user admin from 45.9.20.77 port 33214 ssh2
+Oct  8 13:59:15 my-server sshd[2130]: Failed password for admin from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:19 my-server sshd[2133]: Received disconnect from 111.241.15.39 port 18210:11: [preauth]
+Oct  8 13:59:22 my-server sshd[2130]: Failed password for user from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:28 my-server sshd[2135]: Failed password for invalid user tomcat from 119.14.73.12 port 54321 ssh2
+Oct  8 13:59:31 my-server sshd[2130]: Failed password for root from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:35 my-server sshd[2130]: Failed password for root from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:39 my-server sshd[2138]: Failed password for invalid user user from 220.135.89.44 port 28901 ssh2
+Oct  8 13:59:41 my-server sshd[2130]: Failed password for root from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:45 my-server sshd[2140]: Failed password for root from 106.1.139.227 port 19873 ssh2
+Oct  8 13:59:49 my-server sshd[2130]: Failed password for admin from 118.163.21.59 port 11234 ssh2
+Oct  8 13:59:55 my-server sshd[2142]: Failed password for invalid user nagios from 211.75.132.8 port 43123 ssh2
+Oct  8 14:00:01 my-server sshd[2145]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=evil.com user=root
+Oct  8 14:00:03 my-server sshd[2145]: Failed password for root from 198.51.100.10 port 60123 ssh2
+Oct  8 14:00:08 my-server sshd[2146]: Failed password for invalid user data from 1.171.164.30 port 51432 ssh2
+Oct  8 14:00:14 my-server sshd[2148]: Failed password for root from 203.0.113.55 port 22222 ssh2
+Oct  8 14:00:19 my-server sshd[2150]: Failed password for invalid user ftpuser from 192.0.2.1 port 12345 ssh2
+Oct  8 14:00:25 my-server sshd[2151]: Failed password for invalid user web from 60.250.197.1 port 54321 ssh2
+Oct  8 14:00:31 my-server sshd[2152]: Failed password for invalid user guest from 168.95.1.1 port 19888 ssh2
+Oct  8 14:00:33 my-server sshd[2155]: Accepted password for user jane from 192.168.1.102 port 60124 ssh2
+Oct  8 14:00:38 my-server sshd[2153]: Failed password for invalid user deploy from 45.77.65.12 port 37890 ssh2
+Oct  8 14:00:44 my-server sshd[2155]: pam_unix(sshd:session): session opened for user jane by (uid=0)
+Oct  8 14:00:50 my-server sshd[2158]: Failed password for invalid user admin from 111.241.15.39 port 18210 ssh2
+Oct  8 14:00:56 my-server sshd[2159]: Failed password for root from 1.169.24.88 port 35432 ssh2
+Oct  8 14:01:02 my-server sshd[2160]: Failed password for invalid user oracle from 210.61.122.18 port 48910 ssh2
+Oct  8 14:01:08 my-server sshd[2161]: Failed password for invalid user user from 61.228.35.157 port 22874 ssh2
+Oct  8 14:01:15 my-server sshd[2162]: Failed password for invalid user postgres from 104.248.153.215 port 41098 ssh2
+Oct  8 14:01:21 my-server sshd[2163]: Failed password for root from 27.242.198.15 port 50210 ssh2
+Oct  8 14:01:28 my-server sshd[2164]: Failed password for invalid user admin from 45.9.20.77 port 33214 ssh2
+Oct  8 14:01:35 my-server sshd[2165]: Failed password for invalid user tomcat from 119.14.73.12 port 54321 ssh2
+Oct  8 14:01:42 my-server sshd[2168]: Failed password for invalid user web from 220.135.89.44 port 28901 ssh2
+Oct  8 14:01:49 my-server sshd[2170]: Failed password for root from 106.1.139.227 port 19873 ssh2
+Oct  8 14:01:55 my-server sshd[2171]: Failed password for invalid user nagios from 211.75.132.8 port 43123 ssh2
+Oct  8 14:02:01 my-server sshd[2172]: Failed password for root from 198.51.100.10 port 60123 ssh2
+_
+Oct  8 14:02:07 my-server sshd[2173]: Failed password for invalid user data from 1.171.164.30 port 51432 ssh2
+Oct  8 14:02:14 my-server sshd[2175]: Failed password for root from 203.0.113.55 port 22222 ssh2
+Oct  8 14:02:20 my-server sshd[2176]: Failed password for invalid user ftpuser from 192.0.2.1 port 12345 ssh2
+Oct  8 14:02:26 my-server sshd[2178]: Received disconnect from 203.0.113.55: 11:
+Oct  8 14:02:33 my-server sshd[2180]: Failed password for invalid user guest from 168.95.1.1 port 19888 ssh2
+Oct  8 14:02:40 my-server sshd[2181]: Failed password for invalid user deploy from 45.77.65.12 port 37890 ssh2
+Oct  8 14:02:45 my-server sshd[2182]: pam_unix(sshd:session): session closed for user jane

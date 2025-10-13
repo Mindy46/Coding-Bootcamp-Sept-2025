@@ -1,0 +1,23 @@
+# config.yaml.example
+
+# alerts setting
+alerts:
+  discord:
+    enabled: true
+    # Discord Webhook URL - DO NOT COMMIT THE REAL URL
+    webhook_url: 'YOUR_DISCORD_WEBHOOK_URL_HERE'
+
+# threat_intelligence settings
+threat_intelligence:
+  abuseipdb:
+    enabled: true
+    # AbuseIPDB API Key - DO NOT COMMIT THE REAL API KEY
+    api_key: 'YOUR_ABUSEIPDB_API_KEY_HERE'
+
+# rule list
+rules:
+  - name: 'SSH Brute-Force Attack'
+    enabled: true
+    pattern: 'Failed password for'
+    threshold: 5
+    time_window_minutes: 1

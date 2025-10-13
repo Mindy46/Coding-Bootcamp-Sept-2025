@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignore sensitive configuration files
+config.yaml
+wrong_config.yaml
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
