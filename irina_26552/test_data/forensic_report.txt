@@ -1,0 +1,5 @@
+Forensic Report
+=================
+{'filepath': 'test_data/forensic_report.txt', 'filename': 'forensic_report.txt', 'size_bytes': 399, 'size_human': 399, 'created': '2025-10-12T17:43:37.831278', 'modified': '2025-10-12T17:43:37.831278', 'accessed': '2025-10-12T17:43:39.159265', 'sha256': 'ca9ece70fcd8e41c8855e8e2756133622a23e36b83e6b4993d00eadd350becc7', 'md5': '8988bfd155178e0aea8860c081292523', 'file_type': 'document'}
+{'filepath': 'test_data/documents/notes.txt', 'filename': 'notes.txt', 'size_bytes': 13, 'size_human': 13, 'created': '2025-10-12T17:24:26.356905', 'modified': '2025-10-12T17:24:26.356905', 'accessed': '2025-10-12T17:24:27.608168', 'sha256': '561ddbe36764343cf7c0dbde7a35b10596d61cfd8d6ceefb93033e46d10f51f0', 'md5': '21d1dced924f89c830c3c88cffe8562e', 'file_type': 'document'}
+{'filepath': 'test_data/documents/test.txt', 'filename': 'test.txt', 'size_bytes': 14, 'size_human': 14, 'created': '2025-10-12T17:24:26.356708', 'modified': '2025-10-12T17:24:26.356708', 'accessed': '2025-10-12T17:24:28.191419', 'sha256': '717dc2f43c103803c55c24c4109cdef9e3726d28eea01939a81d8dc41f7f9bcf', 'md5': 'ad338b1a7bd88d299e003bbae77db852', 'file_type': 'document'}

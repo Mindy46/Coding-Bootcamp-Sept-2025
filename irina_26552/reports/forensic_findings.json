@@ -1,0 +1,134 @@
+{
+  "case_info": {
+    "evidence_path": "test_data",
+    "analysis_timestamp": "2025-10-12T22:19:53.990696"
+  },
+  "suspicious_browser_activity": {
+    "total_flagged": 8,
+    "entries": [
+      {
+        "url": "https://suspicious-download-site.onion/malware.exe",
+        "title": "Free Software Download",
+        "browser": "Chrome",
+        "last_visit": "2025-10-09T22:19:27.860450",
+        "visit_count": 1,
+        "risk_level": "HIGH"
+      },
+      {
+        "url": "https://darkweb-marketplace.onion/illegal-goods",
+        "title": "Anonymous Marketplace",
+        "browser": "Chrome",
+        "last_visit": "2025-10-07T23:19:27.860450",
+        "visit_count": 2,
+        "risk_level": "HIGH"
+      },
+      {
+        "url": "https://leaked-credentials-db.com/search",
+        "title": "Credential Database Search",
+        "browser": "Chrome",
+        "last_visit": "2025-10-06T00:19:27.860450",
+        "visit_count": 1,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "url": "https://www.exploit-db.com/",
+        "title": "Exploit Database - Exploits for Penetration Testers",
+        "browser": "Firefox",
+        "last_visit": "2025-10-11T10:19:27.865254",
+        "visit_count": 3,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "url": "https://tor-browser-downloads.onion/packages",
+        "title": "Tor Browser Downloads",
+        "browser": "Firefox",
+        "last_visit": "2025-10-10T18:19:27.865254",
+        "visit_count": 2,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "url": "https://darknet-forums.onion/hacking",
+        "title": "Underground Hacking Forum",
+        "browser": "Firefox",
+        "last_visit": "2025-10-08T23:19:27.865254",
+        "visit_count": 5,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "url": "https://news.ycombinator.com/news",
+        "title": "Hacker News",
+        "browser": "Firefox",
+        "last_visit": "2025-10-08T06:19:27.865254",
+        "visit_count": 18,
+        "risk_level": "MEDIUM"
+      },
+      {
+        "url": "https://pastebin.com/raw/stolen_data_dump",
+        "title": "Database Leak - Pastebin.com",
+        "browser": "Firefox",
+        "last_visit": "2025-10-07T00:19:27.865254",
+        "visit_count": 1,
+        "risk_level": "MEDIUM"
+      }
+    ]
+  },
+  "suspicious_files": {
+    "total_flagged": 7,
+    "entries": [
+      {
+        "filepath": "test_data/images/exif-samples-master/jpg/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "1.66 KB",
+        "note": "Unknown file type or archive - requires further inspection"
+      },
+      {
+        "filepath": "test_data/images/exif-samples-master/jpg/orientation/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "51.00 B",
+        "note": "Unknown file type or archive - requires further inspection"
+      },
+      {
+        "filepath": "test_data/images/exif-samples-master/jpg/gps/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "85.00 B",
+        "note": "Unknown file type or archive - requires further inspection"
+      },
+      {
+        "filepath": "test_data/images/exif-samples-master/jpg/hdr/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "66.00 B",
+        "note": "Unknown file type or archive - requires further inspection"
+      },
+      {
+        "filepath": "test_data/images/exif-samples-master/jpg/exif-org/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "57.00 B",
+        "note": "Unknown file type or archive - requires further inspection"
+      },
+      {
+        "filepath": "test_data/images/exif-samples-master/jpg/invalid/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "93.00 B",
+        "note": "Unknown file type or archive - requires further inspection"
+      },
+      {
+        "filepath": "test_data/images/exif-samples-master/tiff/README",
+        "filename": "README",
+        "type": "unknown",
+        "size": "211.00 B",
+        "note": "Unknown file type or archive - requires further inspection"
+      }
+    ]
+  },
+  "risk_summary": {
+    "high_risk_urls": 2,
+    "medium_risk_urls": 6,
+    "unknown_files": 7
+  }
+}

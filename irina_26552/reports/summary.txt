@@ -1,0 +1,48 @@
+
+========================================
+========================================
+SUMMARY
+Total Files Analyzed: 786
+Total Size: 94.70 MB
+
+File Type Breakdown:
+  Document: 3
+  Image: 773
+  Unknown: 8
+  Database: 2
+
+Browser History: 20 entries found
+  Suspicious URLs: 8
+  Keyword frequency:
+    - 'onion': 4
+    - 'darkweb': 1
+    - 'darknet': 1
+    - 'malware': 1
+    - 'hack': 2
+    - 'exploit': 1
+    - 'leaked': 1
+    - 'stolen': 1
+    - 'dump': 1
+    - 'credential': 1
+    - 'anonymous': 1
+    - 'illegal': 1
+    - 'underground': 1
+
+Image Analysis:
+  Total Images: 773
+  Images with EXIF: 727
+  Images with GPS: 26
+  Images without EXIF (potentially altered): 46
+
+  Unknown File Types: 7 (require further inspection)
+========================================
+========================================
+
+Generated Reports:
+  reports/file_metadata_report.json - Complete file inventory
+  reports/forensic_findings.json - Suspicious activity analysis
+  reports/image_analysis.json - Image EXIF & GPS data
+  reports/altered_images.json - Potentially altered images
+  reports/timeline.json - Chronological timeline of all events
+========================================
+========================================
